@@ -1,5 +1,4 @@
 # PhotoEditWebsite
-final-project-cgfz created by GitHub Classroom
 ## Background and Proposal:
 Based on social model nowadays, people like sending greeting messages to each other. But the message is too simple, we can provide a website to help them design their own greeting card with the photos they like. Then, they can send the cards to their friends by e-mail. 
 
@@ -24,10 +23,6 @@ Based on social model nowadays, people like sending greeting messages to each ot
 
 ## Future Development Plan:
 We will design the more design model such as font models, stick models.
-
-## Domain Model:
-![Image text](https://github.com/neu-mis-info6150-fall-2018/final-project-cgfz/blob/master/domain_model_image/domain_model.svg)
-
 
 How to run app.js
 in app_final_image_editor directory:
