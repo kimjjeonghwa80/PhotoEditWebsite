@@ -1,0 +1,34 @@
+<div class="container">
+  <div id="menu" class="row">
+
+    <div id="resize" class="btn-group col-xs-2">
+      <button type="button" class="btn btn-default dropdown-toggle" (click)="cropEvent()"><span class="glyphicon glyphicon-scissors"></span>
+        Resize</button>
+    </div>
+    <div id="out" class="col-xs-2">
+      <button (click)="zoomIn()">+</button>
+    </div>
+    <div id="in" class="col-xs-2">
+      <button (click)="zoomOut()">-</button>
+    </div>
+
+    <div id="button" class="col-xs-6 text-right">
+      <button type="button" class="btn btn-default dropdown-toggle" (click)="goToConfirm()"><span class="glyphicon glyphicon-ok"></span>
+        Confirm</button>
+      <button type="button" class="btn btn-default dropdown-toggle" (click)="moveToPool()"><span class="glyphicon glyphicon-remove"></span>
+        Remove This Picture</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="img">
+  <mat-slider [(ngModel)]="sliderValue" (change)="onChange()"></mat-slider>
+  <angular-cropper #angularCropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
+  <div *ngIf="croppedImage"><img class="croppedImage" [src]="croppedImage"></div>
+  <img class="newImg" [ngStyle]="{'diplay': none}">
+  <canvas #myCanvas></canvas>
+
+</div>
